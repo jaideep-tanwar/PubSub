@@ -44,8 +44,8 @@ namespace Demo.Controllers
         [HttpPost("Subscribe")]
         public async Task<IActionResult> Subscribe(Sample sample)
         {
-            Console.WriteLine("Subscribe sampletopic");
-            return Ok(sample);
+           Console.WriteLine("Subscribe sampletopic and get messgae :"+" "+sample.Name);
+           return Ok(sample);
         }
     }
 }
